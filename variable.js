@@ -21,7 +21,7 @@ console.log(globalName);
 // 가능하면 필요한 부분에서만 정의해서 쓰도록 하자.
 
 // var (don't ever use this!)
-// var hoisting
+// var hoisting 
 // 어디에 선언했는지 상관없이 항상 제일 위로 선언을 끌어올림.
 {
   age = 4;
@@ -49,13 +49,20 @@ const maxNumber = 5;
 // Imutable 타입의 const
 // 2가지가 있다.
 
+// Immutable data types: premitive types, frozen objects (i.e. object.freeze())
+// Mmutable data types: all objects by default are mutable in JS
+// favor immutable data type always for a few reasons:
+// - security
+// - thread safety
+// reduce human mistakes
+
 // 4. Variable types
 // Primitive, single item: number, string, boolearn, null, undefiedn, symbol 
 // object, box container
 // function, first-class function
 
-const count = 17; // integer
-const size = 17.1; // decimal number
+const count = 17; // integer (정수)
+const size = 17.1; // decimal number (소수)
 console.log(`value: ${count}, type: ${typeof count}`);
 console.log(`value: ${size}, type: ${typeof size}`);
 // 값에 상관없이 타입은 number
