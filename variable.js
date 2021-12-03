@@ -3,7 +3,7 @@
 // use this for Vanilla JavaScript.
 'use strict';
 
-// 2. Variable
+// 2. Variable, rw(read/write)
 // let (added in ES6)
 let globalName = 'global name'; {
   let name = 'berry';
@@ -35,7 +35,7 @@ console.log(age);
 // let number;
 // let을 선언하기도 전에 값을 넣었다는 에러가 발생.
 
-// 3. Contants
+// 3. Contant, r(read only)
 // favor immutable data type always for a few reasons:
 // - security
 // - thread safety
